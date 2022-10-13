@@ -1,6 +1,11 @@
 package pom.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.utils.Driver;
+
+import java.time.Duration;
 
 public class Common {
 
@@ -23,4 +28,11 @@ public class Common {
             e.printStackTrace();
         }
     }
+
+    public static void waitForElementToAppear(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+
 }
