@@ -35,4 +35,21 @@ public class VyramsClothingInnerTest extends TestBase {
 
         HomeVyramsPage.sleep(3000);
     }
+
+    @Test
+    public void removeFromBag() {
+        String expectedText = "Eikite. Eikite ir užpildykite jį visomis savo mados viltimis ir svajonėmis.";
+        String actualText = "";
+
+        VyramsClothingInnerPage.clickPridetiIKrepseliButton();
+        VyramsClothingInnerPage.clickBagIconButton();
+
+        VyramsClothingInnerPage.clickButtonPasalinti();
+        HomeVyramsPage.sleep(3000);
+        actualText = VyramsClothingInnerPage.readValueOfAfterPasalintiText();
+
+        Assert.assertEquals(actualText, expectedText);
+
+        HomeVyramsPage.sleep(3000);
+    }
 }
