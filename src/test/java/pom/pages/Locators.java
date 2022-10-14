@@ -40,6 +40,18 @@ public class Locators {
 
             public static By readValueOfFilteredText = By.xpath("//span[@class='_0Qm8W1 CbogcV" +
                     " FxZV-M pVrzNP UTtITa']");
+
+            public static By emailInputInSubscriptionInput = By.xpath("//input[@class='cDRR43 WOeOAB" +
+                    " _0Qm8W1 _7Cm1F9 FxZV-M bsVOrE mo6ZnF dUMFv9 K82if3 LyRfpJ pVrzNP NN8L-8 QGmTh2 Vn-7c-']");
+
+            public static By vyruMadaCheckButton = By.xpath("(//label[@class='Vm2aBa _0Qm8W1 _7Cm1F9" +
+                    " FxZV-M JT3_zV _5Yd-hZ pVrzNP RKlRH1'])[2]");
+
+            public static By uzregistruokiteManeButton = By.xpath("//button[@class='DJxzzA u9KIT8" +
+                    " uEg2FS U_OhzR ZkIJC- Vn-7c- FCIprz heWLCX JIgPn9 LyRfpJ pxpHHp Md_Vex NN8L-8 GTG2H9 MfX1a0" +
+                    " WCjo-q EKabf7 aX2-iv r9BRio  E6Km4r']");
+
+            public static By readValueOfAfterSubscriptionText = By.xpath("//h4[text()='Beveik baigta!']");
         }
 
         public static class HomeVaikams {
