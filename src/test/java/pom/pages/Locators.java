@@ -63,5 +63,9 @@ public class Locators {
 
             public static By readValueOfColorText = By.xpath("//p[@class='_0Qm8W1 u-6V88 dgII7d pVrzNP zN9KaA']");
         }
+
+        public static class VyramsClothingInner {
+
+        }
     }
 }
