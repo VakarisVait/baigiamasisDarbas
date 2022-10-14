@@ -41,7 +41,7 @@ public class HomeVyramsPage {
 
     public static String readValueOfText() {
         return Common.getElementText(
-                Locators.Zelando.HomeVyrams.readValueOfFilteredText
+                Locators.Zelando.HomeVyrams.valueOfFilteredText
         );
     }
 
@@ -66,7 +66,7 @@ public class HomeVyramsPage {
 
     public static String readValueOfSubscibtionText() {
         return Common.getElementText(
-                Locators.Zelando.HomeVyrams.readValueOfAfterSubscriptionText
+                Locators.Zelando.HomeVyrams.valueOfAfterSubscriptionText
         );
     }
 
