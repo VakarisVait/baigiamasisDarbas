@@ -27,5 +27,19 @@ public class Locators {
             public static By writtenTextForPasswordChange = By.xpath("//div[@class='yqrcoC JCuRr_']");
 
         }
+
+        public static class HomeVyrams {
+
+            public static By avalyneButton = By.xpath("(//span[text()='Avalynė'])[1]");
+
+            public static By avalynesAksesuaraiButton = By.xpath("(//span[text()=" +
+                    "'Avalynės aksesuarai'])[2]");
+
+            public static By padaiIrVidpadiniaiIdeklaiButton = By.xpath("(//span[text()='Padai ir" +
+                    " vidpadiniai įdėklai'])[2]");
+
+            public static By readValueOfFilteredText = By.xpath("//span[@class='_0Qm8W1 CbogcV" +
+                    " FxZV-M pVrzNP UTtITa']");
+        }
     }
 }
