@@ -15,8 +15,8 @@ public class Locators {
             public static By personIconButton = By.xpath(
                     "//div[@class='z-navicat-header_navToolItem z-navicat-header_navToolItem-profile']");
 
-            public static By pamirsoteSlaptazodiButton = By.xpath("//a[@class='XXAoPU xL5R3s JT3_zV" +
-                    " CKDt_l LyRfpJ Rxce4U wu3klO LB9Apd _5Yd-hZ']");
+            public static By pamirsoteSlaptazodiButton = By.xpath("//span[text()=" +
+                    "'Pamiršote slaptažodį?']");
 
             public static By emailInputField = By.xpath("//input[@id='forgotpassword.email']");
 
@@ -40,6 +40,11 @@ public class Locators {
 
             public static By readValueOfFilteredText = By.xpath("//span[@class='_0Qm8W1 CbogcV" +
                     " FxZV-M pVrzNP UTtITa']");
+        }
+
+        public static class HomeVaikams {
+
+
         }
     }
 }
