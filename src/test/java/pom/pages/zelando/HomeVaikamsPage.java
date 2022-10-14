@@ -36,7 +36,7 @@ public class HomeVaikamsPage {
 
     public static String readValueOfColorText() {
         return Common.getElementText(
-                Locators.Zelando.HomeVaikams.readValueOfColorText
+                Locators.Zelando.HomeVaikams.valueOfColorText
         );
     }
 }
