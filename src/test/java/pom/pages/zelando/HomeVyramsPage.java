@@ -44,4 +44,30 @@ public class HomeVyramsPage {
                 Locators.Zelando.HomeVyrams.readValueOfFilteredText
         );
     }
+
+    public static void inputEmailAddress(String email) {
+        Common.sendKeysToElement(
+                email,
+                Locators.Zelando.HomeVyrams.emailInputInSubscriptionInput
+        );
+    }
+
+    public static void clickVyruMadaButton() {
+        Common.clickElement(
+                Locators.Zelando.HomeVyrams.vyruMadaCheckButton
+        );
+    }
+
+    public static void clickUzregistruokiteManeButton() {
+        Common.clickElement(
+                Locators.Zelando.HomeVyrams.uzregistruokiteManeButton
+        );
+    }
+
+    public static String readValueOfSubscibtionText() {
+        return Common.getElementText(
+                Locators.Zelando.HomeVyrams.readValueOfAfterSubscriptionText
+        );
+    }
+
 }
