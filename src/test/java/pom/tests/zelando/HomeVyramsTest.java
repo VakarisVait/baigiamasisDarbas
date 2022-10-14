@@ -2,10 +2,13 @@ package pom.tests.zelando;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pom.pages.zelando.HomeVyramsPage;
 import pom.tests.TestBase;
+import pom.utils.TestListener;
 
+@Listeners(TestListener.class)
 public class HomeVyramsTest extends TestBase {
 
     @BeforeMethod
