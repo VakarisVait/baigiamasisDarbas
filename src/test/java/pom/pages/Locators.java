@@ -44,7 +44,12 @@ public class Locators {
 
         public static class HomeVaikams {
 
+            public static By clothingPictureClick = By.xpath("(//div[@class='KVKCn3 u-C3dd" +
+                    " jDGwVr mo6ZnF KLaowZ'])[1]");
 
+            public static By differentColorOptionPicture = By.xpath("(//div[@class='JT3_zV mo6ZnF'])[4]");
+
+            public static By readValueOfColorText = By.xpath("//p[@class='_0Qm8W1 u-6V88 dgII7d pVrzNP zN9KaA']");
         }
     }
 }
