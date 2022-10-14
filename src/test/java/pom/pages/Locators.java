@@ -38,7 +38,7 @@ public class Locators {
             public static By padaiIrVidpadiniaiIdeklaiButton = By.xpath("(//span[text()='Padai ir" +
                     " vidpadiniai įdėklai'])[2]");
 
-            public static By readValueOfFilteredText = By.xpath("//span[@class='_0Qm8W1 CbogcV" +
+            public static By valueOfFilteredText = By.xpath("//span[@class='_0Qm8W1 CbogcV" +
                     " FxZV-M pVrzNP UTtITa']");
 
             public static By emailInputInSubscriptionInput = By.xpath("//input[@class='cDRR43 WOeOAB" +
@@ -51,7 +51,7 @@ public class Locators {
                     " uEg2FS U_OhzR ZkIJC- Vn-7c- FCIprz heWLCX JIgPn9 LyRfpJ pxpHHp Md_Vex NN8L-8 GTG2H9 MfX1a0" +
                     " WCjo-q EKabf7 aX2-iv r9BRio  E6Km4r']");
 
-            public static By readValueOfAfterSubscriptionText = By.xpath("//h4[text()='Beveik baigta!']");
+            public static By valueOfAfterSubscriptionText = By.xpath("//h4[text()='Beveik baigta!']");
         }
 
         public static class HomeVaikams {
@@ -61,11 +61,16 @@ public class Locators {
 
             public static By differentColorOptionPicture = By.xpath("(//div[@class='JT3_zV mo6ZnF'])[4]");
 
-            public static By readValueOfColorText = By.xpath("//p[@class='_0Qm8W1 u-6V88 dgII7d pVrzNP zN9KaA']");
+            public static By valueOfColorText = By.xpath("//p[@class='_0Qm8W1 u-6V88 dgII7d pVrzNP zN9KaA']");
         }
 
         public static class VyramsClothingInner {
 
+            public static By pridetiIKrepseliButton = By.xpath("");
+
+            public static By bagIconButton = By.xpath("");
+
+            public static By valueOfItemInsideBagText = By.xpath("");
         }
     }
 }
