@@ -38,4 +38,16 @@ public class VyramsClothingInnerPage {
                 Locators.Zelando.VyramsClothingInner.valueOfItemInsideBagText
         );
     }
+
+    public static void clickButtonPasalinti() {
+        Common.clickElement(
+                Locators.Zelando.VyramsClothingInner.buttonPasalintiFromBag
+        );
+    }
+
+    public static String readValueOfAfterPasalintiText() {
+        return Common.getElementText(
+                Locators.Zelando.VyramsClothingInner.valueOfAfterPasalintiText
+        );
+    }
 }
