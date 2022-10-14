@@ -76,6 +76,12 @@ public class Locators {
 
             public static By valueOfItemInsideBagText = By.xpath("//div[@class='z-coast-base__article__" +
                     "details-group']");
+
+            public static By buttonPasalintiFromBag = By.xpath("(//span[@class='z-2-text z-2-text-" +
+                    "detail-text-regular z-2-text-mediumgray'])[1]");
+
+            public static By valueOfAfterPasalintiText = By.xpath("//p[@class='z-2-text z-2-" +
+                    "text-default-bold z-2-text-black']");
         }
     }
 }
