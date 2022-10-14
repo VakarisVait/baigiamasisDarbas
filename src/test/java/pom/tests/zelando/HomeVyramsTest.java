@@ -34,4 +34,20 @@ public class HomeVyramsTest extends TestBase {
 
         HomeVyramsPage.sleep(2000);
     }
+
+    @Test
+    public void successfulSubscriptionEmailInput(){
+        String expectedMessage = "Beveik baigta!";
+        String actualMessage = "";
+
+        HomeVyramsPage.inputEmailAddress("email123@gmail.com");
+        HomeVyramsPage.clickVyruMadaButton();
+        HomeVyramsPage.clickUzregistruokiteManeButton();
+        HomeVyramsPage.sleep(3000);
+        actualMessage = HomeVyramsPage.readValueOfSubscibtionText();
+
+        Assert.assertEquals(expectedMessage, actualMessage);
+
+        HomeVyramsPage.sleep(3000);
+    }
 }
