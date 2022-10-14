@@ -2,10 +2,13 @@ package pom.tests.zelando;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pom.pages.zelando.HomeMoterimsPage;
 import pom.tests.TestBase;
+import pom.utils.TestListener;
 
+@Listeners(TestListener.class)
 public class HomeMoterimsTest extends TestBase {
     @BeforeMethod
     @Override
@@ -17,13 +20,14 @@ public class HomeMoterimsTest extends TestBase {
 
     @Test
     public void ChangePassword() {
-        String expectedText = "vakaris.vaitu@gmail.com";
+        String expectedText = "testas12@gmail.com";
         String actualText = "";
 
         HomeMoterimsPage.clickPersonIcon();
         HomeMoterimsPage.clickPamirsoteSlaptazodiButton();
-        HomeMoterimsPage.inputEmail("vakaris.vaitu@gmail.com");
+        HomeMoterimsPage.inputEmail("testas12@gmail.com");
         HomeMoterimsPage.clickGautiNuorodaButton();
+        HomeMoterimsPage.sleep(3000);
 
         actualText = HomeMoterimsPage.readValueOfText();
 
