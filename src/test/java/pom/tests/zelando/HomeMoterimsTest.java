@@ -20,12 +20,12 @@ public class HomeMoterimsTest extends TestBase {
 
     @Test
     public void ChangePassword() {
-        String expectedText = "testas12@gmail.com";
+        String expectedText = "testas14@gmail.com";
         String actualText = "";
 
         HomeMoterimsPage.clickPersonIcon();
         HomeMoterimsPage.clickPamirsoteSlaptazodiButton();
-        HomeMoterimsPage.inputEmail("testas12@gmail.com");
+        HomeMoterimsPage.inputEmail("testas14@gmail.com");
         HomeMoterimsPage.clickGautiNuorodaButton();
         HomeMoterimsPage.sleep(3000);
 
