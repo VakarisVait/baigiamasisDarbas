@@ -14,41 +14,41 @@ public class HomeMoterimsPage {
 
     public static void acceptPrivacyConfirmation() {
         Common.waitForElementToAppear(
-                Locators.Zelando.Home.privacyAgreementPopup
+                Locators.Zelando.HomeMoterims.privacyAgreementPopup
         );
         Common.clickElement(
-                Locators.Zelando.Home.geraiButton
+                Locators.Zelando.HomeMoterims.geraiButton
         );
     }
 
     public static void clickPersonIcon() {
         Common.clickElement(
-                Locators.Zelando.Home.personIconButton
+                Locators.Zelando.HomeMoterims.personIconButton
         );
     }
 
     public static void clickPamirsoteSlaptazodiButton() {
         Common.clickElement(
-                Locators.Zelando.Login.pamirsoteSlaptazodiButton
+                Locators.Zelando.HomeMoterims.pamirsoteSlaptazodiButton
         );
     }
 
     public static void inputEmail(String email) {
         Common.sendKeysToElement(
                 email,
-                Locators.Zelando.Login.emailInputField
+                Locators.Zelando.HomeMoterims.emailInputField
         );
     }
 
     public static void clickGautiNuorodaButton() {
         Common.clickElement(
-                Locators.Zelando.Login.gautiNuorodaButton
+                Locators.Zelando.HomeMoterims.gautiNuorodaButton
         );
     }
 
     public static String readValueOfText() {
         return Common.getElementText(
-                Locators.Zelando.Login.writtenTextForPasswordChange
+                Locators.Zelando.HomeMoterims.writtenTextForPasswordChange
         );
     }
 
