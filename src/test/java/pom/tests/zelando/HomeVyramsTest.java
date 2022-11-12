@@ -10,7 +10,6 @@ import pom.utils.TestListener;
 
 @Listeners(TestListener.class)
 public class HomeVyramsTest extends TestBase {
-
     @BeforeMethod
     @Override
     public void setUp() {
@@ -18,6 +17,7 @@ public class HomeVyramsTest extends TestBase {
         HomeVyramsPage.open("https://www.zalando.lt/vyrams-home/");
         HomeVyramsPage.acceptPrivacyConfirmation();
     }
+
 
     @Test
     public void productFilteringOption(){

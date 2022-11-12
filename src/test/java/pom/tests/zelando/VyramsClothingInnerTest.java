@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import pom.pages.zelando.HomeVyramsPage;
 import pom.pages.zelando.VyramsClothingInnerPage;
 import pom.tests.TestBase;
 import pom.utils.TestListener;
@@ -21,6 +20,7 @@ public class VyramsClothingInnerTest extends TestBase {
         VyramsClothingInnerPage.acceptPrivacyConfirmation();
     }
 
+
     @Test
     public void addItemToBag() {
         String expectedText = "Versace Jeans Couture";
@@ -28,12 +28,12 @@ public class VyramsClothingInnerTest extends TestBase {
 
         VyramsClothingInnerPage.clickPridetiIKrepseliButton();
         VyramsClothingInnerPage.clickBagIconButton();
-        HomeVyramsPage.sleep(2000);
+        VyramsClothingInnerPage.sleep(2000);
         actualText = VyramsClothingInnerPage.readValueOfItemInsideBagText();
 
         Assert.assertTrue(actualText.contains(expectedText));
 
-        HomeVyramsPage.sleep(3000);
+        VyramsClothingInnerPage.sleep(3000);
     }
 
     @Test
@@ -45,11 +45,11 @@ public class VyramsClothingInnerTest extends TestBase {
         VyramsClothingInnerPage.clickBagIconButton();
 
         VyramsClothingInnerPage.clickButtonPasalinti();
-        HomeVyramsPage.sleep(3000);
+        VyramsClothingInnerPage.sleep(3000);
         actualText = VyramsClothingInnerPage.readValueOfAfterPasalintiText();
 
         Assert.assertEquals(actualText, expectedText);
 
-        HomeVyramsPage.sleep(3000);
+        VyramsClothingInnerPage.sleep(3000);
     }
 }

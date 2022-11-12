@@ -20,6 +20,7 @@ public class HomeVaikamsTest extends TestBase {
         HomeVaikamsPage.acceptPrivacyConfirmation();
     }
 
+
     @Test
     public void optionToChangeClothingColor() {
         String expectedColor = "brown";

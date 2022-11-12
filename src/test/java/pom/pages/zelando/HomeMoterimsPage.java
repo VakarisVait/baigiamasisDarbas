@@ -14,22 +14,23 @@ public class HomeMoterimsPage {
 
     public static void acceptPrivacyConfirmation() {
         Common.waitForElementToAppear(
-                Locators.Zelando.HomeMoterims.privacyAgreementPopup
+                Locators.Zelando.HomeMoterims.popupPrivacyAgreement
         );
         Common.clickElement(
-                Locators.Zelando.HomeMoterims.geraiButton
+                Locators.Zelando.HomeMoterims.buttonGerai
         );
     }
 
+
     public static void clickPersonIcon() {
         Common.clickElement(
-                Locators.Zelando.HomeMoterims.personIconButton
+                Locators.Zelando.HomeMoterims.buttonPersonIcon
         );
     }
 
     public static void clickPamirsoteSlaptazodiButton() {
         Common.clickElement(
-                Locators.Zelando.HomeMoterims.pamirsoteSlaptazodiButton
+                Locators.Zelando.HomeMoterims.buttonPamirsoteSlaptazodi
         );
     }
 
@@ -42,7 +43,7 @@ public class HomeMoterimsPage {
 
     public static void clickGautiNuorodaButton() {
         Common.clickElement(
-                Locators.Zelando.HomeMoterims.gautiNuorodaButton
+                Locators.Zelando.HomeMoterims.buttonGautiNuoroda
         );
     }
 
@@ -51,5 +52,4 @@ public class HomeMoterimsPage {
                 Locators.Zelando.HomeMoterims.writtenTextForPasswordChange
         );
     }
-
 }

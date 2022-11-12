@@ -14,28 +14,29 @@ public class HomeVyramsPage {
 
     public static void acceptPrivacyConfirmation() {
         Common.waitForElementToAppear(
-                Locators.Zelando.HomeMoterims.privacyAgreementPopup
+                Locators.Zelando.HomeMoterims.popupPrivacyAgreement
         );
         Common.clickElement(
-                Locators.Zelando.HomeMoterims.geraiButton
+                Locators.Zelando.HomeMoterims.buttonGerai
         );
     }
 
+
     public static void clickAvalyneButton() {
         Common.clickElement(
-                Locators.Zelando.HomeVyrams.avalyneButton
+                Locators.Zelando.HomeVyrams.buttonAvalyne
         );
     }
 
     public static void clickAvalynesAksesuaraiButton() {
         Common.clickElement(
-                Locators.Zelando.HomeVyrams.avalynesAksesuaraiButton
+                Locators.Zelando.HomeVyrams.buttonAvalynesAksesuarai
         );
     }
 
     public static void clickPadaiIrVidpadiniaiIdeklaiButton() {
         Common.clickElement(
-                Locators.Zelando.HomeVyrams.padaiIrVidpadiniaiIdeklaiButton
+                Locators.Zelando.HomeVyrams.buttonPadaiIrVidpadiniaiIdeklai
         );
     }
 
@@ -54,13 +55,13 @@ public class HomeVyramsPage {
 
     public static void clickVyruMadaButton() {
         Common.clickElement(
-                Locators.Zelando.HomeVyrams.vyruMadaCheckButton
+                Locators.Zelando.HomeVyrams.buttonVyruMadaCheck
         );
     }
 
     public static void clickUzregistruokiteManeButton() {
         Common.clickElement(
-                Locators.Zelando.HomeVyrams.uzregistruokiteManeButton
+                Locators.Zelando.HomeVyrams.buttonUzregistruokiteMane
         );
     }
 
@@ -69,5 +70,4 @@ public class HomeVyramsPage {
                 Locators.Zelando.HomeVyrams.valueOfAfterSubscriptionText
         );
     }
-
 }

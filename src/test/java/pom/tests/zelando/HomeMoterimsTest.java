@@ -18,6 +18,7 @@ public class HomeMoterimsTest extends TestBase {
         HomeMoterimsPage.acceptPrivacyConfirmation();
     }
 
+
     @Test
     public void ChangePassword() {
         String expectedText = "testas14@gmail.com";
@@ -35,7 +36,4 @@ public class HomeMoterimsTest extends TestBase {
 
         HomeMoterimsPage.sleep(3000);
     }
-
-
-
 }
